@@ -27,7 +27,7 @@ serve: ${ifServe(true, false)}
 
   const webpackConfig = webpackValidator({
     entry: {
-      'app-productx': './apps/app-productx/main.jsx',
+      'app': './apps/app/main.jsx',
     },
     output: {
       path: ifProdOrDev(helpers.root('../WebSite/Scripts/bundles'), helpers.root('dist')),
