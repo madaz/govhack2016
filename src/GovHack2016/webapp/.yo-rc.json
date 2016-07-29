@@ -1,0 +1,10 @@
+{
+  "generator-webapp-react": {
+    "apps": [
+      "app-productx"
+    ],
+    "typescript": false,
+    "npm": true,
+    "typings": false
+  }
+}

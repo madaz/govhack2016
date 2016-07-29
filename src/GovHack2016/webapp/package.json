@@ -1,0 +1,39 @@
+{
+  "name": "productx-webapp",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "clean-dist": "rimraf dist",
+    "clean-prod": "rimraf ../WebSite/Scripts/bundles",
+    "prebuild:dev": "npm run clean-dist",
+    "build:dev": "webpack --config ./config/webpack.config.js --env.dev --progress",
+    "watch:dev": "npm run build:dev -- --watch",
+    "prebuild:prod": "npm run clean-prod",
+    "build:prod": "webpack --config ./config/webpack.config.js --env.prod --progress",
+    "watch:prod": "npm run build:prod -- --watch",
+    "serve:dev": "webpack-dev-server --inline --hot --content-base dist/ --config ./config/webpack.config.js --env.dev --env.serve",
+    "serve:prod": "webpack-dev-server --inline --hot --content-base dist/ --config ./config/webpack.config.js --env.prod --env.serve"
+  },
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015-webpack": "^6.4.2",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-2": "^6.11.0",
+    "css-loader": "^0.23.1",
+    "html-webpack-plugin": "^2.22.0",
+    "json-loader": "^0.5.4",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "redux-logger": "^2.6.1",
+    "redux-thunk": "^2.1.0",
+    "rimraf": "^2.5.4",
+    "source-map-loader": "^0.1.5",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.1.0-beta.20",
+    "webpack-dev-server": "^2.1.0-beta.0",
+    "webpack-validator": "^2.2.3"
+  }
+}
