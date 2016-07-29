@@ -220,7 +220,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Properties\PublishProfiles\GovHackAUSCWebSite.pubxml" />
-    <Content Include="Scripts\bundles\app-productx.bundle.js" />
+    <Content Include="Scripts\bundles\app.bundle.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
