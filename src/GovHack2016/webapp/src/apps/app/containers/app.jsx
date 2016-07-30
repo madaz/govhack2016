@@ -2,7 +2,7 @@ import * as React from 'react';
 import {connect} from 'react-redux';
 
 import {searchAsync} from '../store';
-import {Criteria} from '../components';  
+import {Criteria, ResultsContainer} from '../components';  
 
 
 const mapStateToProps = ({regions, industries}) =>
@@ -30,6 +30,7 @@ const App = ({
       industries={industries}
       onSearchClick={search}
     />
+    <ResultsContainer />
   </div>
 );
 

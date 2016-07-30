@@ -247,6 +247,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <EmbeddedResource Include="Resources\ABSDimensions.json" />
+    <EmbeddedResource Include="Resources\ABS_EIE_B_mining.json" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

@@ -80,7 +80,7 @@ const Criteria = React.createClass({
       ? {} : {disabled: true};
 
     return (
-      <form className="form-criteria">
+      <form className={"form-criteria m-b-1"}>
         <fieldset className="form-group">
           <legend>Question?</legend>
           <div>

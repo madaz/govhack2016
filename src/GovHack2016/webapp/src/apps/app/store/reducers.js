@@ -39,9 +39,21 @@ const results = (
   }
 };
 
+const loading = (
+  state = false,
+  action
+) => {
+  switch (action.type) {
+    case ACTIONS.TOGGLE_LOADING:
+      return action.loading;
+    default:
+      return state;
+  }
+};
 
 export const appStore = combineReducers({
   regions,
   results,
   industries,
+  loading,
 });

@@ -6,7 +6,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>@ViewBag.Title</title>
     
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    
     <link rel="icon" href="https://www.govhack.org/wp-content/uploads/2016/05/cropped-govhack-logo-32x32.png" sizes="32x32" />
     <link rel="icon" href="https://www.govhack.org/wp-content/uploads/2016/05/cropped-govhack-logo-192x192.png" sizes="192x192" />
 
@@ -22,14 +24,13 @@
         window.appInsights=appInsights;
         appInsights.trackPageView();
     </script>
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default|gated,fetch|gated"></script>    
+    <script src="//cdn.polyfill.io/v2/polyfill.min.js?features=default|gated,fetch|gated"></script>    
 </head>
 <body>
     <div class="container-fluid">
         @RenderBody()
     </div>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
     @RenderSection("scripts", required: false)
 </body>
 </html>
