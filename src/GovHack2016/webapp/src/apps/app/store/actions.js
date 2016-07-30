@@ -1,33 +1,33 @@
 export const ACTIONS = {
-  UPDATE_FOO: 'UPDATE_FOO',
-  UPDATE_VALUES: 'UPDATE_VALUES',
+  UPDATE_REGIONS: 'UPDATE_REGIONS',
+  UPDATE_RESULTS: 'UPDATE_RESULTS',
 };
 
-export const updateFoo = (foo) => ({
-  type: ACTIONS.UPDATE_FOO,
-  payload: foo,
+export const updateRegions = (regions) => ({
+  type: ACTIONS.UPDATE_REGIONS,
+  regions,
 });
 
-export const updateFooAsync = (foo) =>
+export const updateRegionsAsync = () =>
   (dispatch, getState, data) => {
-    dispatch(updateFoo({name: `updating...`}));
-    return data.api.getFoo(foo)
-      .then((foo) => {
-        dispatch(updateFoo(foo));
-        return foo;
+    return data.api.getRegions()
+      .then((regions) => {
+        dispatch(updateRegions(regions));
+        return regions;
       });
   };
 
-export const updateValues = (values) => ({
-  type: ACTIONS.UPDATE_VALUES,
-  values,
+export const updateResults = (results) => ({
+  type: ACTIONS.UPDATE_RESULTS,
+  results,
 });
 
-export const getValuesAsync = () =>
+export const searchAsync = (criteria) =>
   (dispatch, getState, data) => {
-    return data.api.getValues()
-      .then((values) => {
-        dispatch(updateValues(values));
-        return values;
+    return data.api.getSearch(criteria)
+      .then((results) => {
+        dispatch(updateResults(results));
+        return results;
       });
   };
+  

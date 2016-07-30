@@ -1,57 +1,32 @@
 import * as React from 'react';
 import {connect} from 'react-redux';
 
-import {updateFoo, updateFooAsync, getValuesAsync} from '../store';
-import {Foo} from '../components';  
+import {searchAsync} from '../store';
+import {Criteria} from '../components';  
 
 
-const mapStateToProps = ({foo, values}) =>
+const mapStateToProps = ({regions}) =>
     ({
-      foo,
-      values
+      regions
     });
 
 const mapDispatchToProps =
   (dispatch) =>
     ({
-      changeName() {
-        dispatch(updateFoo({name: 'xyz'}));
-      },
-      changeNameAsync() {
-        dispatch(updateFooAsync({name: 'Mr Async (Thunk)'}));
-      },
-      getValues() {
-        dispatch(getValuesAsync());
+      search(criteria) {
+        dispatch(searchAsync(criteria));
       },
     });
 
 const App = ({
-  foo,
-  values,
-  changeName,
-  changeNameAsync,
-  getValues
+  regions,
+  search
 }) => (
-  <div>
-    <Foo name={foo.name} />
-    <button
-      type="button"
-      onClick={changeName}
-    >Update Name</button>
-    <button
-      type="button"
-      onClick={changeNameAsync}
-    >Update Name Async</button>
-    <button
-      type="button"
-      onClick={getValues}
-    >Get Values</button>
-    <ul>
-      {values.map((value) => 
-        (<span key={value}>{value}</span>)
-      )}
-    </ul>
-   
+  <div className="container">
+    <Criteria
+      regions={regions}
+      onSearchClick={search}
+    />
   </div>
 );
 

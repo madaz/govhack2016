@@ -1,30 +1,26 @@
 import {combineReducers} from 'redux';
-
 import {ACTIONS} from './actions';
 
 
-const foo = (
-  state = {},
+const regions = (
+  state = [],
   action
-) => {
+) => {  
   switch (action.type) {
-    case ACTIONS.UPDATE_FOO:
-      return {
-        ...state,
-        ...action.payload
-      };
+    case ACTIONS.UPDATE_REGIONS:
+      return action.regions;
     default:
       return state;
   }
 };
 
-const values = (
-  state = [],
+const results = (
+  state = null,
   action
-) => {  
+) => {
   switch (action.type) {
-    case ACTIONS.UPDATE_VALUES:
-      return action.values;
+    case ACTIONS.UPDATE_RESULTS:
+      return action.results;
     default:
       return state;
   }
@@ -32,6 +28,6 @@ const values = (
 
 
 export const appStore = combineReducers({
-  foo,
-  values
+  regions,
+  results,
 });

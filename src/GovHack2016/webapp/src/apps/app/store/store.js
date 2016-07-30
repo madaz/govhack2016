@@ -4,19 +4,8 @@ import {
   compose} from 'redux';
 import * as createLogger from 'redux-logger';
 import thunk from 'redux-thunk';
-
 import {appStore} from './';
 
-
-const api = {
-  get(data) {
-    return new Promise((res) => {
-      setTimeout(() => {
-        res(data);
-      }, 500);
-    });
-  }
-};
 
 const getMiddleware = (api) => {
   const middlewares = [
@@ -27,7 +16,6 @@ const getMiddleware = (api) => {
 
   if ('production' !== process.env.NODE_ENV) {
     middlewares.push(createLogger());
-    console.log('Adding redux-logger', middlewares);
   }  
 
   return applyMiddleware(...middlewares);
