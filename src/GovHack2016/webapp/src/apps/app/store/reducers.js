@@ -2,13 +2,26 @@ import {combineReducers} from 'redux';
 import {ACTIONS} from './actions';
 
 
+
 const regions = (
-  state = [],
+  state = { Codes: [] },
   action
 ) => {  
   switch (action.type) {
     case ACTIONS.UPDATE_REGIONS:
       return action.regions;
+    default:
+      return state;
+  }
+};
+
+const industries = (
+  state = { Codes: [] },
+  action
+) => {  
+  switch (action.type) {
+    case ACTIONS.UPDATE_INDUSTRIES:
+      return action.industries;
     default:
       return state;
   }
@@ -30,4 +43,5 @@ const results = (
 export const appStore = combineReducers({
   regions,
   results,
+  industries,
 });

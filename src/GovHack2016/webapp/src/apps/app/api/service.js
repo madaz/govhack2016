@@ -1,12 +1,22 @@
+let prefix = 'http://localhost:17130';
+
 const api = {
   getRegions() {
-    return fetch('/api/regions')
+    return fetch(`${prefix}/api/abs/dimension/regions`)
       .then(res => res.json());
   },
-  getSearch(criteria) {
-    return fetch('/api/search')
+  getIndustries() {
+    return fetch(`${prefix}/api/abs/dimension/industries`)
       .then(res => res.json());
-  }
+  },  
+  getSearch({industry, region}) {
+    return fetch(`${prefix}/api/abs/dimension/query?industry=${industry}&region=${region}`)
+      .then(res => res.json());
+  },
+  getDimensions() {
+    return fetch(`${prefix}/api/abs/dimension`)
+      .then(res => res.json());
+  }  
 };
 
 const fakeApiService = {
@@ -26,5 +36,5 @@ const fakeApiService = {
   }  
 };
 
-//export default api;
-export default fakeApiService;
+export default api;
+//export default fakeApiService;

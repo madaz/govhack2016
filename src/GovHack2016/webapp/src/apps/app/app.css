@@ -1,0 +1,7 @@
+.form-criteria span,
+.form-criteria select {
+  margin-right: 1rem;  
+}
+.form-criteria select {
+  max-width: 300px;
+}

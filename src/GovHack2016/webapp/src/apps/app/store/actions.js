@@ -1,6 +1,7 @@
 export const ACTIONS = {
   UPDATE_REGIONS: 'UPDATE_REGIONS',
   UPDATE_RESULTS: 'UPDATE_RESULTS',
+  UPDATE_INDUSTRIES: 'UPDATE_INDUSTRIES',
 };
 
 export const updateRegions = (regions) => ({
@@ -17,10 +18,24 @@ export const updateRegionsAsync = () =>
       });
   };
 
+export const updateIndustry = (industries) => ({
+  type: ACTIONS.UPDATE_INDUSTRIES,
+  industries,
+});
+
+export const updateIndustriesAsync = () =>
+  (dispatch, getState, data) => {
+    return data.api.getIndustries()
+      .then((industries) => {
+        dispatch(updateIndustry(industries));
+        return industries;
+      });
+  };  
+
 export const updateResults = (results) => ({
   type: ACTIONS.UPDATE_RESULTS,
   results,
-});
+});  
 
 export const searchAsync = (criteria) =>
   (dispatch, getState, data) => {

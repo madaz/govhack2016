@@ -5,9 +5,10 @@ import {searchAsync} from '../store';
 import {Criteria} from '../components';  
 
 
-const mapStateToProps = ({regions}) =>
+const mapStateToProps = ({regions, industries}) =>
     ({
-      regions
+      regions,
+      industries
     });
 
 const mapDispatchToProps =
@@ -20,11 +21,13 @@ const mapDispatchToProps =
 
 const App = ({
   regions,
-  search
+  search,
+  industries,
 }) => (
   <div className="container">
     <Criteria
       regions={regions}
+      industries={industries}
       onSearchClick={search}
     />
   </div>

@@ -76,6 +76,7 @@ serve: ${ifServe(true, false)}
       ifProd(new webpack.DefinePlugin({
         'process.env': {
           NODE_ENV: JSON.stringify('production'),
+          SERVE: serve === true ? JSON.stringify("true") : ""
         }
       })),
       ifProd(new webpack.optimize.UglifyJsPlugin({
