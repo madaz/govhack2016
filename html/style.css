@@ -1,0 +1,30 @@
+h1 {
+	
+}
+h2 {
+	margin-top: 2em;
+}
+.table {
+	margin-top: 2em;
+}
+.row {
+	margin-top: 2em;
+}
+.number-medium {
+	text-align: center;
+	line-height: 1.2;
+}
+.number-medium .number {
+	font-weight: bold;
+	font-size: 3em;
+}
+.canvas {
+	margin-top: 1em;
+}
+
+.column-number {
+	width: 8em;
+	text-align: center;
+}
+td.column-number {
+}
