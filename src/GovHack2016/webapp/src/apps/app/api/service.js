@@ -1,4 +1,4 @@
-let prefix = 'http://localhost:17130';
+let prefix = '';
 
 const api = {
   getRegions() {
