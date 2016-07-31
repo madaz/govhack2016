@@ -1,13 +1,13 @@
-﻿
-h1 {
-	
+﻿h1 {
+	text-align: center;
 }
-h2 {
+h2, .h2 {
 	margin-top: 2em;
 }
 h3 {
 	/* These are currently only for the title for canvases / charts */
 	text-align: center;
+	font-size: 1.25rem;
 }
 .table {
 	margin-top: 2em;
@@ -15,13 +15,23 @@ h3 {
 .row {
 	margin-top: 2em;
 }
+.row .col-xs-6 {
+	margin-bottom: 1em;
+}
 .number-medium {
 	text-align: center;
 	line-height: 1.2;
 }
 .number-medium .number {
 	font-weight: bold;
-	font-size: 3em;
+	font-size: 2em;
+}
+.score {
+	text-align: center;
+}
+.score .number {
+	font-weight: bold;
+	font-size: 2em;
 }
 .canvas {
 	margin-top: 1em;
