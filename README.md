@@ -1,5 +1,7 @@
 # Future Proof by The Code Collective
 
+[![](html/Video.png)](https://www.youtube.com/watch?v=jsReas9BljM&feature=youtu.be)
+
 ## Developer Story
 
 As a team of software developers we understand that machines are replacing labour on both a physical level, and mental level. Automation and business needs to optimise for efficiency are putting people out of work, or significantly reducing the required hours to complete specific tasks. For our population to meet to the challenges presented by these changing employment conditions, we need our current workforce to be able to re-locate, re-skill, or re-educate; the other option - retire - is not available to the great majority of the populace.
