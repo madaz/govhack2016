@@ -1,0 +1,830 @@
+[
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "1"
+          },
+          {
+            "name": "text",
+            "text": "I am"
+          },
+          {
+            "name": "tab",
+            "text": "A"
+          },
+          {
+            "name": "position",
+            "text": "1"
+          },
+          {
+            "name": "previousID",
+            "text": "0"
+          },
+          {
+            "name": "nextID",
+            "text": "0"
+          },
+          {
+            "name": "function",
+            "text": "0"
+          },
+          {
+            ""
+          }
+        ]
+      },
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "2"
+          },
+          {
+            "name": "text",
+            "text": "currently employed"
+          },
+          {
+            "name": "tab",
+            "text": "B"
+          },
+          {
+            "name": "position",
+            "text": "1"
+          },
+          {
+            "name": "previousID",
+            "text": "1"
+          },
+          {
+            "name": "nextID",
+            "text": "5"
+          },
+          {
+            "name": "function",
+            "text": "1"
+          }
+        ]
+      },
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "3"
+          },
+          {
+            "name": "text",
+            "text": "moving to"
+          },
+          {
+            "name": "tab",
+            "text": "B"
+          },
+          {
+            "name": "position",
+            "text": "2"
+          },
+          {
+            "name": "previousID",
+            "text": "1"
+          },
+          {
+            "name": "nextID",
+            "text": "0"
+          },
+          {
+            "name": "function",
+            "text": "1"
+          }
+        ]
+      },
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "4"
+          },
+          {
+            "name": "text",
+            "text": "studying"
+          },
+          {
+            "name": "tab",
+            "text": "B"
+          },
+          {
+            "name": "position",
+            "text": "3"
+          },
+          {
+            "name": "previousID",
+            "text": "1"
+          },
+          {
+            "name": "nextID",
+            "text": "6"
+          },
+          {
+            "name": "function",
+            "text": "1"
+          }
+        ]
+      },
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "5"
+          },
+          {
+            "name": "text",
+            "text": "in"
+          },
+          {
+            "name": "tab",
+            "text": "C"
+          },
+          {
+            "name": "position",
+            "text": "1"
+          },
+          {
+            "name": "previousID",
+            "text": "2"
+          },
+          {
+            "name": "nextID",
+            "text": "0"
+          },
+          {
+            "name": "function",
+            "text": "0"
+          }
+        ]
+      },
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "6"
+          },
+          {
+            "name": "text",
+            "text": "for a job in"
+          },
+          {
+            "name": "tab",
+            "text": "C"
+          },
+          {
+            "name": "position",
+            "text": "2"
+          },
+          {
+            "name": "previousID",
+            "text": "4"
+          },
+          {
+            "name": "nextID",
+            "text": "0"
+          },
+          {
+            "name": "function",
+            "text": "0"
+          }
+        ]
+      },
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "7"
+          },
+          {
+            "name": "text",
+            "text": "sector"
+          },
+          {
+            "name": "tab",
+            "text": "D"
+          },
+          {
+            "name": "position",
+            "text": "1"
+          },
+          {
+            "name": "previousID",
+            "text": "5"
+          },
+          {
+            "name": "nextID",
+            "text": "0"
+          },
+          {
+            "name": "function",
+            "text": "2"
+          }
+        ]
+      },
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "8"
+          },
+          {
+            "name": "text",
+            "text": "area"
+          },
+          {
+            "name": "tab",
+            "text": "D"
+          },
+          {
+            "name": "position",
+            "text": "2"
+          },
+          {
+            "name": "previousID",
+            "text": "5"
+          },
+          {
+            "name": "nextID",
+            "text": "14"
+          },
+          {
+            "name": "function",
+            "text": "3"
+          }
+        ]
+      },
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "9"
+          },
+          {
+            "name": "text",
+            "text": "area"
+          },
+          {
+            "name": "tab",
+            "text": "D"
+          },
+          {
+            "name": "position",
+            "text": "3"
+          },
+          {
+            "name": "previousID",
+            "text": "3"
+          },
+          {
+            "name": "nextID",
+            "text": "14"
+          },
+          {
+            "name": "function",
+            "text": "3"
+          }
+        ]
+      },
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "10"
+          },
+          {
+            "name": "text",
+            "text": "sector"
+          },
+          {
+            "name": "tab",
+            "text": "D"
+          },
+          {
+            "name": "position",
+            "text": "4"
+          },
+          {
+            "name": "previousID",
+            "text": "6"
+          },
+          {
+            "name": "nextID",
+            "text": "-1"
+          },
+          {
+            "name": "function",
+            "text": "2"
+          }
+        ]
+      },
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "11"
+          },
+          {
+            "name": "text",
+            "text": "area"
+          },
+          {
+            "name": "tab",
+            "text": "D"
+          },
+          {
+            "name": "position",
+            "text": "5"
+          },
+          {
+            "name": "previousID",
+            "text": "6"
+          },
+          {
+            "name": "nextID",
+            "text": "-1"
+          },
+          {
+            "name": "function",
+            "text": "3"
+          }
+        ]
+      },
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "12"
+          },
+          {
+            "name": "text",
+            "text": "located in"
+          },
+          {
+            "name": "tab",
+            "text": "E"
+          },
+          {
+            "name": "position",
+            "text": "1"
+          },
+          {
+            "name": "previousID",
+            "text": "7"
+          },
+          {
+            "name": "nextID",
+            "text": "18"
+          },
+          {
+            "name": "function",
+            "text": "0"
+          }
+        ]
+      },
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "13"
+          },
+          {
+            "name": "text",
+            "text": "area"
+          },
+          {
+            "name": "tab",
+            "text": "D"
+          },
+          {
+            "name": "position",
+            "text": "5"
+          },
+          {
+            "name": "previousID",
+            "text": "6"
+          },
+          {
+            "name": "nextID",
+            "text": "0"
+          },
+          {
+            "name": "function",
+            "text": "3"
+          }
+        ]
+      },
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "14"
+          },
+          {
+            "name": "text",
+            "text": "and"
+          },
+          {
+            "name": "tab",
+            "text": "E"
+          },
+          {
+            "name": "position",
+            "text": "3"
+          },
+          {
+            "name": "previousID",
+            "text": "0"
+          },
+          {
+            "name": "nextID",
+            "text": "0"
+          },
+          {
+            "name": "function",
+            "text": "0"
+          }
+        ]
+      },
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "15"
+          },
+          {
+            "name": "text",
+            "text": "looking to skill up"
+          },
+          {
+            "name": "tab",
+            "text": "F"
+          },
+          {
+            "name": "position",
+            "text": "1"
+          },
+          {
+            "name": "previousID",
+            "text": "14"
+          },
+          {
+            "name": "nextID",
+            "text": "23"
+          },
+          {
+            "name": "function",
+            "text": "1"
+          }
+        ]
+      },
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "16"
+          },
+          {
+            "name": "text",
+            "text": "interested in the prospects for people with experience "
+          },
+          {
+            "name": "tab",
+            "text": "F"
+          },
+          {
+            "name": "position",
+            "text": "2"
+          },
+          {
+            "name": "previousID",
+            "text": "14"
+          },
+          {
+            "name": "nextID",
+            "text": "19"
+          },
+          {
+            "name": "function",
+            "text": "1"
+          }
+        ]
+      },
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "17"
+          },
+          {
+            "name": "text",
+            "text": "want to know which industry sectors"
+          },
+          {
+            "name": "tab",
+            "text": "G"
+          },
+          {
+            "name": "position",
+            "text": "3"
+          },
+          {
+            "name": "previousID",
+            "text": "14"
+          },
+          {
+            "name": "nextID",
+            "text": "25"
+          },
+          {
+            "name": "function",
+            "text": "1"
+          }
+        ]
+      },
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "18"
+          },
+          {
+            "name": "text",
+            "text": "area"
+          },
+          {
+            "name": "tab",
+            "text": "G"
+          },
+          {
+            "name": "position",
+            "text": "1"
+          },
+          {
+            "name": "previousID",
+            "text": "12"
+          },
+          {
+            "name": "nextID",
+            "text": "20"
+          },
+          {
+            "name": "function",
+            "text": "3"
+          }
+        ]
+      },
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "19"
+          },
+          {
+            "name": "text",
+            "text": "related to"
+          },
+          {
+            "name": "tab",
+            "text": "G"
+          },
+          {
+            "name": "position",
+            "text": "2"
+          },
+          {
+            "name": "previousID",
+            "text": "16"
+          },
+          {
+            "name": "nextID",
+            "text": "24"
+          },
+          {
+            "name": "function",
+            "text": "0"
+          }
+        ]
+      },
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "20"
+          },
+          {
+            "name": "text",
+            "text": "and would like to know"
+          },
+          {
+            "name": "tab",
+            "text": "H"
+          },
+          {
+            "name": "position",
+            "text": "1"
+          },
+          {
+            "name": "previousID",
+            "text": "18"
+          },
+          {
+            "name": "nextID",
+            "text": "21"
+          },
+          {
+            "name": "function",
+            "text": "0"
+          }
+        ]
+      },
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "21"
+          },
+          {
+            "name": "text",
+            "text": "my current industry outlook"
+          },
+          {
+            "name": "tab",
+            "text": "J"
+          },
+          {
+            "name": "position",
+            "text": "1"
+          },
+          {
+            "name": "previousID",
+            "text": "0"
+          },
+          {
+            "name": "nextID",
+            "text": "-1"
+          },
+          {
+            "name": "function",
+            "text": "0"
+          }
+        ]
+      },
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "22"
+          },
+          {
+            "name": "text",
+            "text": "which area has the best opportunities for me"
+          },
+          {
+            "name": "tab",
+            "text": "J"
+          },
+          {
+            "name": "position",
+            "text": "2"
+          },
+          {
+            "name": "previousID",
+            "text": "13"
+          },
+          {
+            "name": "nextID",
+            "text": "-1"
+          },
+          {
+            "name": "function",
+            "text": "0"
+          }
+        ]
+      },
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "23"
+          },
+          {
+            "name": "text",
+            "text": "to meet the demands of industries "
+          },
+          {
+            "name": "tab",
+            "text": "J"
+          },
+          {
+            "name": "position",
+            "text": "3"
+          },
+          {
+            "name": "previousID",
+            "text": "15"
+          },
+          {
+            "name": "nextID",
+            "text": "-1"
+          },
+          {
+            "name": "function",
+            "text": "0"
+          }
+        ]
+      },
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "24"
+          },
+          {
+            "name": "text",
+            "text": "sector"
+          },
+          {
+            "name": "tab",
+            "text": "J"
+          },
+          {
+            "name": "position",
+            "text": "4"
+          },
+          {
+            "name": "previousID",
+            "text": "19"
+          },
+          {
+            "name": "nextID",
+            "text": "-1"
+          },
+          {
+            "name": "function",
+            "text": "2"
+          }
+        ]
+      },
+      {
+        "name": "sentence",
+        "column": [
+          {
+            "name": "textID",
+            "text": "25"
+          },
+          {
+            "name": "text",
+            "text": "are best represented"
+          },
+          {
+            "name": "tab",
+            "text": "J"
+          },
+          {
+            "name": "position",
+            "text": "5"
+          },
+          {
+            "name": "previousID",
+            "text": "17"
+          },
+          {
+            "name": "nextID",
+            "text": "-1"
+          },
+          {
+            "name": "function",
+            "text": "0"
+          }
+        ]
+      }
+    ]
