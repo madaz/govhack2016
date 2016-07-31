@@ -27,21 +27,6 @@ namespace GovHack2016.WebSite.Controllers
             }
         });
 
-        internal static readonly Lazy<Dictionary<string, string>> IndustriesForAllRegions = new Lazy<Dictionary<string, string>>(() =>
-        {
-            var assembly = typeof(AbsController).Assembly;
-            var resourceName = assembly.GetManifestResourceNames().Where(x => x.IndexOf("ABS_EIE_B_mining.json", StringComparison.OrdinalIgnoreCase) > -1).First();
-            var stream = assembly.GetManifestResourceStream(resourceName);
-
-            var dic = new Dictionary<string, string>();
-            using (var sr = new StreamReader(stream))
-            {
-                dic["B"] = sr.ReadToEnd();
-            }
-
-            return dic;
-        });
-
         [HttpGet][Route("dimensions")]
         public List<Dimension> GetDimensions()
         {
@@ -66,11 +51,6 @@ namespace GovHack2016.WebSite.Controllers
         [Route("dimension/industry/{code}")]
         public async Task<HttpResponseMessage> GetIndustry(string code)
         {
-            if (IndustriesForAllRegions.Value.ContainsKey(code))
-            {
-                return CreateRawJson(IndustriesForAllRegions.Value[code]);
-            }
-            
             var response = await GetDimensionQuery(code, "");
             return response;
         }
@@ -81,12 +61,6 @@ namespace GovHack2016.WebSite.Controllers
         {
             if (string.IsNullOrWhiteSpace(industry)) industry = "+";
             if (string.IsNullOrWhiteSpace(region)) region = "+";
-
-            // check cached data
-            if (region == "+" && IndustriesForAllRegions.Value.ContainsKey(industry))
-            {
-                return CreateRawJson(IndustriesForAllRegions.Value[industry]);
-            }
 
             var httpClient = new HttpClient();
             var result = await httpClient.GetStringAsync($"http://govhack.abs.gov.au/restsdmx/sdmx.ashx/GetData/ABS_EIE/+.{industry}.{region}.A/ABS?format=compact_v2");
