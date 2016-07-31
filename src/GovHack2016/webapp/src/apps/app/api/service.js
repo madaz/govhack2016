@@ -1,4 +1,4 @@
-let prefix = '';
+let prefix = 'https://govhack2016ausc.azurewebsites.net';
 
 const api = {
   getRegions() {

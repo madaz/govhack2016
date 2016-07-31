@@ -4,6 +4,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
 	<link rel="stylesheet" href="style.css" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.0/Chart.bundle.min.js"></script>
 </head>
@@ -27,7 +28,7 @@
 			</span>
 		</div>
 	</div>
-	<canvas id="region_population" width="100%" height="40"></canvas>
+	<canvas id="region_population" width="100%" height="20"></canvas>
 	<script type="text/javascript">
 	var region_population = document.getElementById("region_population");
 	var region_population_chart = new Chart(region_population, {
@@ -54,7 +55,7 @@
 		            pointHoverBorderWidth: 2,
 		            pointRadius: 1,
 		            pointHitRadius: 10,
-		            data: [65, 59, 80, 81, 56],
+		            data: [5500, 5690, 5778, 6100, 6450],
 		            spanGaps: false,
 		        }
 		    ]
@@ -82,13 +83,14 @@
 	</div>
 	
 	<h2>Industries</h2>
+	<h3>Full-Time Employment</h3>
 	<canvas id="region_industries" width="100%" height="40"></canvas>
 	<script>
 	var region_industries = document.getElementById("region_industries");
 	var region_industries_chart = new Chart(region_industries, {
 	    type: 'line',
 	    data: {
-		    labels: ["January", "February", "March", "April", "May", "June", "July"],
+		    labels: ["2010", "2011", "2012", "2013", "2014"],
 		    datasets: [
 		        {
 		            label: "Mining",
@@ -96,20 +98,20 @@
 		            lineTension: 0.1,
 		            backgroundColor: "rgba(75,192,192,0.4)",
 		            borderColor: "rgba(75,192,192,1)",
+		            pointBorderColor: "rgba(75,192,192,1)",
+		            pointHoverBackgroundColor: "rgba(75,192,192,1)",
+		            pointHoverBorderColor: "rgba(220,220,220,1)",
 		            borderCapStyle: 'butt',
 		            borderDash: [],
 		            borderDashOffset: 0.0,
 		            borderJoinStyle: 'miter',
-		            pointBorderColor: "rgba(75,192,192,1)",
 		            pointBackgroundColor: "#fff",
 		            pointBorderWidth: 1,
 		            pointHoverRadius: 5,
-		            pointHoverBackgroundColor: "rgba(75,192,192,1)",
-		            pointHoverBorderColor: "rgba(220,220,220,1)",
 		            pointHoverBorderWidth: 2,
 		            pointRadius: 1,
 		            pointHitRadius: 10,
-		            data: [65, 59, 80, 81, 56, 55, 40],
+		            data: [65, 59, 80, 81, 56],
 		            spanGaps: false,
 		        },
 		        {
@@ -126,7 +128,7 @@
 		            pointHoverBorderWidth: 2,
 		            pointRadius: 1,
 		            pointHitRadius: 10,
-		            data: [34, 65, 59, 80, 81, 56, 55],
+		            data: [34, 65, 59, 80, 81],
 		            spanGaps: false,
 		        }
 		    ]

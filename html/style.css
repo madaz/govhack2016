@@ -4,6 +4,10 @@ h1 {
 h2 {
 	margin-top: 2em;
 }
+h3 {
+	/* These are currently only for the title for canvases / charts */
+	text-align: center;
+}
 .table {
 	margin-top: 2em;
 }
