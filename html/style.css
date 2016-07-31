@@ -32,3 +32,16 @@ h3 {
 }
 td.column-number {
 }
+
+.sentence-text {
+	margin-right: .5em;
+	margin-bottom: 1rem;
+}
+.sentence-tag.tag {
+	margin-bottom: 1rem;
+	padding: .5rem;
+	margin-right: .5rem;			
+}
+.sentence-tag .fa {
+	margin-left: .5rem;
+}
