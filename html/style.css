@@ -3,6 +3,7 @@ h1 {
 }
 h2, .h2 {
 	margin-top: 2em;
+	text-align: center;
 }
 h3 {
 	/* These are currently only for the title for canvases / charts */
