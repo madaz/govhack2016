@@ -1,5 +1,5 @@
 h1 {
-	
+	text-align: center;
 }
 h2, .h2 {
 	margin-top: 2em;
@@ -23,6 +23,13 @@ h3 {
 	line-height: 1.2;
 }
 .number-medium .number {
+	font-weight: bold;
+	font-size: 2em;
+}
+.score {
+	text-align: center;
+}
+.score .number {
 	font-weight: bold;
 	font-size: 2em;
 }
