@@ -38,9 +38,11 @@ h3 {
 /*	padding: 35px 25px 15px 25px;*/
 	padding-top: 14px;
 	border-radius: 50px;
-	border: 7px solid green;
+	border: 7px solid #5cb85c;
 	font-weight: bold;
 	font-size: 3em;
+	background-color: #5cb85c;
+	color: white;
 }
 .donut-wrapper {
 	margin: 20px auto;
