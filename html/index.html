@@ -13769,6 +13769,16 @@ var regions =  {
 	</script>
 
 <script>
+
+var sortToken = function (a, b) {
+    if(a.text < b.text) return -1;
+    if(a.text > b.text) return 1;
+    return 0;	
+};
+
+var industryValues = industries.filter(function (x) { return x.parentCode === null; } ).map(function (x) { return { value: x.value, text: x.description }; });
+industryValues.sort(sortToken);
+
 var naturalLanguageDb = [
       {
 				"text": "I am",
@@ -13779,7 +13789,9 @@ var naturalLanguageDb = [
       {
 				"text": "currently employed",
 				"tag": "statusEmployed",
-				"nextTags": [],
+				"nextTags": [
+					"inCurrentlyEmployed"
+				],
 				"removable": true
       },
       {
@@ -13856,11 +13868,50 @@ var naturalLanguageDb = [
       {
 				"text": "",
 				"tag": "industry",
-				"values": industries.filter(function (x) { return x.parentCode === null; } ).map(function (x) { return { value: x.value, text: x.description }; }),
+				"values": industryValues,
 				"nextTags": [
 				],
+				"removable": true,
+				"search": true
+      },
+
+
+      {
+				"text": "in",
+				"tag": "inCurrentlyEmployed",
+				"values": [],
+				"nextTags": [
+						"inIndustry", "inRegion"
+				],
+				"removable": false
+      },
+      {
+				"text": "industry",
+				"tag": "inIndustry",
+				"values": [],
+				"nextTags": [
+						"inIndustryLocated", "inWouldLike"
+				],
 				"removable": true
-      },													
+      },
+      {
+				"text": "region",
+				"tag": "inIndustryLocated",
+				"values": industryValues,
+				"nextTags": [
+						"inIndustryRegion"
+				],
+				"removable": true
+      },			
+      {
+				"text": "and would like to know",
+				"tag": "inWouldLike",
+				"values": [],
+				"nextTags": [
+				],
+				"removable": false
+      },				
+
     ];
 </script>
 
@@ -13974,8 +14025,8 @@ function renderSentence() {
 
 	$("#sentence").empty().append(p);
 
-	if (nextTokens.length === 0) {
-		$('#list').fadeIn();
+	if (nextTokens.length === 0 && lastItem.token.search === true) {		
+		$('#list').fadeIn(500);
 	} else {
 		$('#list').hide();
 		$('#detail').hide();
@@ -13986,7 +14037,11 @@ renderSentence();
 
 $("#list a").on('click', function (e) {
 	e.preventDefault();
-	$('#detail').fadeIn();
+	$('#detail').fadeIn(500, function () {
+		$('html, body').animate({
+				scrollTop: $("#detail").offset().top
+		}, 500);
+	});
 });
 
 
