@@ -17,15 +17,15 @@ To provide a web based resource that can facilitate the best application of huma
 ## Timeline
 After establishing the team members on the Friday we fleshed out the project concept on the Saturday, and created our entry home page. We had intended to make the entire concept revolve around giving people access to data in a clear and concise manner using a language based query that answered one of 3 key questions;
 
-    If I have a specific set of industry relevant experience where should I be looking to live and work?
-    If I want to live in a specific region what industry relavent skills should I be acquiring for the best chance of employment?
-    What educational pathways should I pursue to ensure long term employment options if I am planning on living in a particular region?
+1. If I have a specific set of industry relevant experience where should I be looking to live and work?
+2. If I want to live in a specific region what industry relavent skills should I be acquiring for the best chance of employment?
+3. What educational pathways should I pursue to ensure long term employment options if I am planning on living in a particular region?
 
 The decision was made to mash up all the data to create an index weight, then apply that weight to the current data for the industry group in the region specified, with 3 structured data query options based on the language path chosen to search the data;
 
-    All areas (in a region) : Specific industry
-    Specific area : All industries
-    Specific area : Specific Industry
+* All areas (in a region) : Specific industry
+* Specific area : All industries
+* Specific area : Specific Industry
 
 Unfortunately the data set being used for our pimary data set (ABS Experimental Data by Industry and Region over 2011-2014) turned out to be immense, and unable to be replacted in an SQL datanase. In attempting to do so, we burned through a lot of Azure time! We ended up taking  the data we needed for a specific language pathway (Moving to the Sunshine Coast with Education Industry experience) and then applying a rudimentary weighting to the employment and industry data returned.
 
@@ -34,10 +34,10 @@ Employment (FTE) returned from lastest point in time, wighted on growth trend co
 
 Industry Value Added ($) / FTE  returned from lastest point in time, with statistically insignificant results ignored (FTE < 50), weighted on;
 
-    ABS, industry growth over time
-    ATO, aggregated industry profitability (not in GovHack dataset?) over time
-    DIIS, Research and Development (innovation) regionally over time, and relative to national basline
-    DOE, Vacancies advertised in industry in last 6 months, and trend over time.
+* ABS, industry growth over time
+* ATO, aggregated industry profitability (not in GovHack dataset?) over time
+* DIIS, Research and Development (innovation) regionally over time, and relative to national basline
+* DOE, Vacancies advertised in industry in last 6 months, and trend over time.
 
 ## Progress
 [Photos of progress](/Progress)
