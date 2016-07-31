@@ -14,10 +14,12 @@ Because industries cannot relocate as easily as people, it makes sense that this
 
 To provide a web based resource that can facilitate the best application of human resources to industry requirements using data to determine latent needs present in the local economy and growth industries of a particular area and the expected financial outcomes for employees based on trends present in related financial, economic and other indicators.
 
-![Build Status](https://adamd.visualstudio.com/_apis/public/build/definitions/498153dd-df0f-4ffe-81f2-f7456d064808/11/badge "Build Status")
+## Progress
+[Photos of progress](/Progress)
 
 ## Prototype
 [Web app](https://govhack2016.practiceofcode.com)
+
 
 ## API
 (Currently offline due to over allowed tier usage)
@@ -33,6 +35,8 @@ To provide a web based resource that can facilitate the best application of huma
 * Azure
 
 ### Continuos Integration
+![Build Status](https://adamd.visualstudio.com/_apis/public/build/definitions/498153dd-df0f-4ffe-81f2-f7456d064808/11/badge "Build Status")
+
 * [Visual Studio Team Services](https://www.visualstudio.com)
 
 ### WebApp
