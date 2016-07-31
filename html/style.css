@@ -14,13 +14,16 @@ h3 {
 .row {
 	margin-top: 2em;
 }
+.row .col-xs-6 {
+	margin-bottom: 1em;
+}
 .number-medium {
 	text-align: center;
 	line-height: 1.2;
 }
 .number-medium .number {
 	font-weight: bold;
-	font-size: 3em;
+	font-size: 2em;
 }
 .canvas {
 	margin-top: 1em;
