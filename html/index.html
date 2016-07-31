@@ -12,6 +12,8 @@
 <div class="container">
 	<h1>Future Proof</h1>	
 	<div id="sentence"></div>
+	<div id="list"></div>
+	<div id="detail"></div>
 </div>
 
 <script>
@@ -13818,9 +13820,12 @@ function renderSentence() {
 	$("#sentence").empty().append(p);
 
 	if (nextTokens.length === 0) {
-		console.log('show list');
+		$.get('/detail.html').then((data) => {
+			$(data).find(".container").appendTo($('#detail'))
+		});
 	} else {
-		console.log('hide list');
+		$('#list').empty();
+		$('#detail').empty();
 	}
 }
 
