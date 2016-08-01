@@ -46,7 +46,7 @@ Industry Value Added ($) / FTE  returned from lastest point in time, with statis
 The proof of concept host went south late on Sunday so we have transitioned the code to static responses and re-hosted on a simple HTML service to illustrate the intended user interface. The natural language pathways are limited to a strict subset of data sets and the data is static as pulled from the ABS govhack.abs.gov.au site using the API, and then manipulate in Excel.
 
 ## Prototype
-[Web app](https://govhack2016.practiceofcode.com)
+[Web app](http://govhack2016.practiceofcode.com)
 
 
 ## API
